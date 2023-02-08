@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adventure</title>
+    <title>Cat Room</title>
     <style>
         body {
-          background-image: url("thomas-jean-pierre-snowscape-anim.gif");
+          background-image: url("steamuserimages-a.akamaihd.gif");
           background-repeat: no-repeat;
           background-attachment: fixed;
           background-size: cover;
@@ -55,18 +55,19 @@
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
-          margin-top: 200px;
+          margin-top: 700px;
+          margin-left: 50px;
+          flex-direction: row;
         }
         
         .card {
-          background-color: rgba(0, 0, 0, 0.5);
+          
           border-radius: 10px;
           box-shadow: 2px 2px 10px black;
           margin: 20px;
           width: 400px;
-          height: 500px;
+          height: 200px;
           display: flex;
-          flex-direction: column;
           justify-content: center;
           align-items: center;
         }
@@ -83,14 +84,9 @@
           text-align: left;
           padding: 0 20px;
         }
-        button {
-          background-color: white;
-          color: black;
-          border: none;
-          border-radius: 20px;
-          padding: 10px 20px;
-          margin-top: 20px;
-          cursor: pointer;
+        #cat-text {
+            font-family: fantasy;
+            font-size: 40px;
         }
         button:hover {
           background-color: beige;
@@ -100,9 +96,26 @@
           color: white; 
           padding: 20px;
         }
+        #hidden-info1 {
+            position: absolute;
+            top: 100;
+            left: 100;
+            right: 100;
+            bottom: 100;
+        }
     </style>
+
 </head>
 <body>
-    
+    <div class="header">
+        <div class="tab" id="mapTab"><a  href="maps.html">Map</a></div>
+        <div class="tab" id="tavernTab"><a href="index.html">Tavern</a></div>
+        <div class="tab" id="partyTab"><a href="Cat-Room.html">Cat Room</a></div>
+    </div>
+    <div class="container">
+        <div class="card">
+          <div id="hidden-info1">
+            <div id="cat-text">He sleeps so sound</div>
+          </div>
 </body>
 </html>

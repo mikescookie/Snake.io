@@ -4,6 +4,9 @@ const hiddeninfo2 = document.getElementById("hidden-info2");
 const showinfo2 = document.getElementById("show-info2"); 
 const hiddeninfo3 = document.getElementById("hidden-info3");
 const showinfo3 = document.getElementById("show-info3"); 
+const choosenCharacter = document.getElementById("choosen-1");
+const choosenCharacter2 = document.getElementById("choosen-2");
+const choosenCharacter3 = document.getElementById("choosen-3");
 
 
 showinfo.addEventListener("click", function(){
@@ -35,4 +38,14 @@ showinfo3.addEventListener("click", function(){
         hiddeninfo3.style.display = "none";
         showinfo3.innerHTML = "Show Me";
     }
+})
+
+choosenCharacter.addEventListener("click", function(){
+    window.location.href = "adventureM.html";
+})
+choosenCharacter2.addEventListener("click", function(){
+    window.location.href = "adventureS.html";
+})
+choosenCharacter3.addEventListener("click", function(){
+    window.location.href = "adventureG.html";
 })

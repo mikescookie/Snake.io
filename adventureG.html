@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gutter Adventure</title>
+    <style>
+        body {
+          background-image: url("giphy.gif");
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+          background-position: center;
+          color: white;
+          font-family: Arial, sans-serif;
+          text-align: center;
+        }
+        h1 {
+          margin-top: 100px;
+          font-family: cursive;
+        }
+        h3{
+          font-family: cursive;
+        }
+        .header {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 50px;
+          background-color: rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 2px 10px black;       
+        }
+        .tab {
+          width: 100px;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          }
+        a{
+          color:aliceblue;
+          text-decoration: none;
+        }
+        a:hover{
+          text-decoration: none;
+          color: rgb(82, 82, 75);
+  
+        }
+        .tab:hover {
+          color: rgb(82, 82, 75);
+        }
+        .container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          margin-top: 200px;
+          margin-left: 70px;
+        }
+        
+        .card {
+          
+          border-radius: 10px;
+          
+          margin: 20px;
+          width: 700px;
+          height: 100px;
+          display: flex;
+          flex-direction: column;
+          justify-content:center;
+          align-items: center;
+          font-family: 'MedievalSharp', cursive;
+          font-size: 17px;
+          color:rgba(249, 249, 249, 0.9);
+          font-weight: 900;
+        }
+        .card img {
+          border-radius: 50%;
+          width: 150px;
+          height: 150px;
+          margin-bottom: 20px;
+        }
+        .card h2 {
+          margin-bottom: 20px;
+        }
+        .card p {
+          text-align: left;
+          padding: 0 20px;
+        }
+        button {
+          background-color: white;
+          color: black;
+          border: none;
+          border-radius: 20px;
+          padding: 10px 20px;
+          margin-top: 20px;
+          cursor: pointer;
+        }
+        button:hover {
+          background-color: beige;
+        }
+        footer {
+          text-align: center; 
+          color: white; 
+          padding: 20px;
+        }
+    
+      </style>
+</head>
+<body>
+    <div class="header">
+        <div class="tab" id="mapTab"><a  href="maps.html">Map</a></div>
+        <div class="tab" id="tavernTab"><a href="index.html">Tavern</a></div>
+    </div>
+    <div class="container">
+        <div class="card">
+          <div id="hidden-info1">
+            You have choosen Gutter. The daughter of an elf and a human, Gutter was looked down upon by her elvish community. Cast away from her people she searches for her purpose in life while conducting mischeif along the way.
+          </div>
+        </div>
+    </div>
+</body>
+</html>
